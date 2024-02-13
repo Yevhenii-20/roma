@@ -6,7 +6,7 @@ $( document ).ready(function() {
 
     $('.carousel-care__box').slick({
         infinite: true,
-        slidesToShow: 7,
+        slidesToShow: 8,
         slidesToScroll: 3,
         autoplay: true,
         dots: false,

@@ -40,7 +40,7 @@ body {
 
 .header-free__title {
     color: #211955;
-    font-size: 15px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 700;
     padding-left: 10px;
@@ -49,10 +49,10 @@ body {
 
 #header-free__timer > div {
     display: inline-block;
-    width: 40px;
-    height: 40px;
+    width: 36px;
+    height: 36px;
     background: #fff;
-    border-radius: 10px;
+    border-radius: 3px;
     border: 2px solid #211955;
     color: #211955;
     text-align: center;
@@ -68,7 +68,7 @@ body {
 #header-free__timer {
     display: flex;
     align-items: center;
-    margin-left: 15px;
+    margin-left: 8px;
 }
 
 .header-free__between {
@@ -77,8 +77,8 @@ body {
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
-    padding-left: 7px;
-    padding-right: 7px;
+    padding-left: 4px;
+    padding-right: 4px;
 }
 
 .timer-title {
@@ -101,7 +101,10 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 13px 0px;
+    padding: 12px 0px;
+    width: 100%;
+    max-width: 555px;
+    margin: 0 auto;
 }
 
 .header__rated {
@@ -192,7 +195,7 @@ body {
 }
 
 .home-section {
-    padding-top: 23px;
+    padding-top: 24px;
 }
 
 .home-left {
@@ -257,8 +260,8 @@ body {
     padding: 9px 14px;
     display: flex;
     align-items: flex-start;
-    margin-top: 12px;
-
+    margin-top: 13px;
+    padding-bottom: 5px;
     z-index: 2;
 }
 
@@ -316,7 +319,7 @@ body {
 
 .home-flex {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
 }
 
@@ -337,7 +340,7 @@ body {
     font-weight: 400;
     text-transform: capitalize;
 
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .home-bottles-left span {
@@ -352,7 +355,7 @@ body {
     font-style: normal;
     font-weight: 500;
     line-height: 28px;
-    padding-top: 20px;
+    padding-top: 5px;
 }
 
 .as-see span {
@@ -362,13 +365,15 @@ body {
 
 .home-right {
     text-align: center;
+    position: relative;
+    top: 23px;
 }
 
 /* SUFFERING SECTION */
 
 .suffering-section {
     border-top: 1px solid rgba(0, 0, 0, 0.10);
-    margin-top: 53px;
+    margin-top: 56px;
     padding-top: 42px;
 }
 
@@ -389,6 +394,8 @@ body {
 .suffering-problem__box {
     width: 40%;
     margin-left: 22px;
+    position: relative;
+    top: 12px;
 }
 
 .suffering-problem__item {
@@ -485,7 +492,7 @@ body {
 .care-flex__item {
     display: flex;
     align-items: center;
-    margin-bottom: 15px;
+    margin-bottom: 17px;
 }
 
 .care-item__percent {
@@ -495,6 +502,7 @@ body {
     font-weight: 400;
     line-height: 21px;
     min-width: 56px;
+    text-align: right;
 }
 
 .care-item__body {
@@ -513,7 +521,7 @@ body {
 
 .care-flex {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
     margin-top: 45px;
 }
@@ -561,6 +569,7 @@ body {
     background: linear-gradient(180deg, rgba(238, 134, 164, 0.50) 0%, rgba(77, 126, 204, 0.50) 100%);
     padding-top: 100px;
     padding-bottom: 75px;
+    display: none;
 }
 
 .package-container {
@@ -1001,8 +1010,19 @@ body {
 
 .table-text > div {
     height: 84px;
-    padding-top: 18px;
     padding-left: 43px;
+    display: flex;
+    align-items: center;
+}
+
+.table-recomend {
+    color: #000;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px; /* 169.231% */
+    letter-spacing: 0.4px;
+    text-transform: capitalize;
 }
 
 .table-grey {
@@ -1014,6 +1034,7 @@ body {
     display: flex;
     margin-top: 76px;
     justify-content: center;
+    margin-bottom: 35px;
 }
 
 .table-bottle {
@@ -1038,8 +1059,18 @@ body {
     text-align: center;
 }
 
+.table-price {
+    color: #000;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 169.231% */
+    letter-spacing: 0.4px;
+    text-transform: capitalize;
+}
+
 .table-bottle {
-    height: 530px;
+    height: 690px;
 }
 
 .table-bottle__main {
@@ -1099,7 +1130,7 @@ body {
 .talk-section {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #FFF0F7 100%);
     padding-top: 34px;
-    padding-bottom: 34px;
+    padding-bottom: 52px;
 }
 
 .stars-item {
@@ -1179,15 +1210,19 @@ body {
     top: 10px;
 }
 
+.review-section {
+    background: #fff;
+    padding-top: 51px;
+}
 
 .review-item {
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 17px;
 }
 
 .review-item__body {
     position: relative;
-    border-radius: 6px;
+    border-radius: 15px;
     border: 1px solid #E981A9;
     background: #FFF;
     padding: 18px 20px;
@@ -1196,16 +1231,60 @@ body {
 }
 
 .reviev-block {
-    margin-top: 40px;
+    width: 100%;
+    max-width: 762px;
+    margin: 0 auto;
+    margin-top: 17px;
 }
 
+.review-stars__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.review-stars__mark {
+    color: #211955;
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px; /* 100% */
+}
+
+.review-stars__ver {
+    color: #211955;
+    text-align: center;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.review-stars__left {
+    display: inline-block;
+}
+
+.review-stars__right {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.review-stars__right img {
+    margin: 4px;
+}
 
 .review-item__shadow {
     position: absolute;
     background: #E981A9;
     width: 100%;
     height: 100%;
-    border-radius: 6px;
+    border-radius: 16px;
     bottom: -3px;
     right: -3px;
     z-index: 1;
@@ -1217,12 +1296,11 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: 15px; /* 107.143% */
-    padding-bottom: 7px;
 }
 
 .review-item__text {
     color: #000;
-    font-size: 13px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -1262,9 +1340,10 @@ body {
 
 /* AWAY SECTION */
 .away-section {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #FFF0F7 100%);
+    background: #FFF0F7;
     padding-top: 48px;
     padding-bottom: 34px;
+    margin-top: 42px;
 }
 
 .away-subtitle {
@@ -1442,6 +1521,10 @@ body {
 
 .faq-item__answer {
     display: none;
+}
+
+.faq-block .faq-item:nth-child(1) .faq-item__answer {
+    display: block;
 }
 
 .faq-arrow {
