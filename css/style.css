@@ -24,6 +24,18 @@ body {
     margin: 0 auto;
 }
 
+.yellow {
+    color: #FBFF2A;
+}
+
+.grey {
+    color: #676873;
+}
+
+.red {
+    color: #FD4F4F;
+}
+
 /* HEADER */
 
 .header-free__block {
