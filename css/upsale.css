@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 body {
     font-family: 'Inter', sans-serif;
 }
@@ -32,6 +34,7 @@ body {
 .upsale-main {
     background: #E0FFFE;
     padding-top: 22px;
+    padding-bottom: 40px;
 }
 
 
@@ -117,6 +120,7 @@ body {
     box-shadow: 0px 4px 12px 0px #AFDFDB;
     padding: 25px 40px;
     margin-top: 20px;
+    padding-bottom: 42px;
 }
 
 .expected-result {
@@ -125,6 +129,8 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    padding-top: 25px;
+    padding-bottom: 8px;
 }
 
 .upsale-product {
@@ -135,4 +141,813 @@ body {
 
 .upsale-product__left {
     padding-top: 17px;
+    width: 49%;
+}
+
+.upsale-2products__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.upsale-2products__item {
+    border-radius: 8px;
+    border-right: 2px solid #B6E4E0;
+    border-bottom: 2px solid #B6E4E0;
+    background: linear-gradient(90deg, #E9FFFE -47.89%, #FFF 100%);
+    padding: 12px;
+    padding-right: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.products2-item__left {
+    display: flex;
+    align-items: center;
+
+    color: #1C1C28;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    min-width: 58px;
+}
+
+.products2-item__left > span {
+    padding-right: 5px;
+}
+
+.products2-item__text {
+    position: relative;
+    color: #1C1C28;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 5px;
+}
+
+.products2-item__text::before {
+    content: ' ';
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: #3DC051;
+    border-radius: 50%;
+    left: -15px;
+    top: 8px;
+}
+
+.products2-item__right {
+    padding-left: 25px;
+}
+
+.get-30days {
+    color: #1C1C28;
+    text-align: center;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 16px;
+}
+
+.upsale-product__image {
+    padding-left: 10px;
+    position: relative;
+}
+
+.upsale-product__image::before {
+    content: ' ';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: url(../img/upsale/45-save.svg) center center no-repeat;
+    background-size: cover;
+    right: 20px;
+    top: -15px;
+}
+
+.upsale-trust {
+    color: #000;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px; /* 133.333% */
+    display: flex;
+    align-items: center;
+}
+
+.upsale-trust > span:nth-child(1) {
+    font-size: 14px;
+}
+
+.upsale-trust img {
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+.upsale-product__right {
+    width: 43.8%;
+}
+
+.upsale-product__title {
+    color: #1C1C28;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 5px;
+}
+
+.upsale-product__text {
+    color: #1C1C28;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    padding-top: 7px;
+}
+
+.product-benefit__title {
+    color: #1C1C28;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+    padding-top: 19px;
+    padding-bottom: 7px;
+}
+
+.product-benefit__item {
+    color: #1C1C28;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    padding-bottom: 8px;
+}
+
+.product-benefit__item {
+    display: flex;
+    align-items: center;
+}
+
+.product-benefit__item > span {
+    padding-left: 4px;
+}
+
+.upsale-product__price-box {
+    display: flex;
+    align-items: flex-start;
+    padding-top: 45px;
+}
+
+.upsale-product__price {
+
+}
+
+.only-today {
+    color: #1C1C28;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.up-price {
+    color: #3DC051;
+    font-size: 64px;
+    line-height: 64px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.per-bottle {
+    color: #1C1C28;
+    text-align: right;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.upsale-product__retail {
+    color: #999;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    margin-left: 19px;
+}
+
+.retail-price {
+    text-align: center;
+    font-size: 28px;
+    position: relative;
+    margin-top: 5px;
+}
+
+.retail-price::before {
+    content: ' ';
+    background: #EC2121;
+    position: absolute;
+    width: 104px;
+    height: 2px;
+    top: 13px;
+    left: 5px;
+    transform: rotate(-10deg);
+    border-radius: 5px;
+}
+
+button {
+    cursor: pointer;
+}
+
+.upsale-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.upsale-button__white {
+    border-radius: 5px;
+    border: 1px solid #A2A2A2;
+    background: #FFF;
+    color: #000;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 7px;
+    width: 40%;
+    margin-right: 10px;
+}
+
+.upsale-button__green {
+    padding: 7px;
+    border-radius: 5px;
+    background: #3DC051;
+    border: 1px solid #3DC051;
+    width: 40%;
+    color: #FFF;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.upsale-skip {
+    color: #272727;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 21.6px; /* 135% */
+    text-decoration-line: underline;
+    text-align: center;
+    margin-top: 12px;
+}
+
+.upsale-secure {
+    border-top: 1px solid #DDD;
+    border-bottom: 1px solid #DDD;
+    background: #FAFAFA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 11px 0;
+}
+
+.upsale-secure img {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.upsale-review__title {
+    color: #000;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+}
+
+.upsale-review__mark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 8px;
+}
+
+.upsale-review__mark > span {
+    padding-right: 5px;
+}
+
+.upsale-review__subtitle {
+    color: #202020;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 125% */
+    padding-top: 20px;
+}
+
+.upsale-review__section {
+    padding-top: 40px;
+}
+
+.upsale-review__item {
+    display: flex;
+    align-items: flex-start;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    border-bottom: 1px solid #ddd;
+}
+
+.upsale-review__container .upsale-review__item:last-child {
+    border-bottom: none;
+}
+
+.upsale-review__user {
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.upsale-review__image {
+    text-align: left;
+}
+
+.upsale-copyright {
+    color:  #1C1C28;
+    font-size: 12px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.upsale-review__ver {
+    display: flex;
+    align-items: center;
+
+    color: #4EAB5F;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.upsale-review__ver > span {
+    padding-left: 3px;
+}
+
+.upsale-review__text {
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 140% */
+}
+
+.upsale-review__date {
+    color: #000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+    margin-top: 10px;
+}
+
+.upsale-review__info {
+    margin-left: 17px;
+}
+
+.upsale-footer {
+    margin-top: 55px;
+    margin-bottom: 40px;
+}
+
+/* UPSALE 2 */
+
+.upsale-2 .upsale-main {
+    background: #FFD9EB;
+}
+
+.upsale-2 .upsale-title {
+    color: #CA367C;
+}
+
+.upsale-2 .uspale2-bottle__desctiption {
+    color: #176DF0;
+    text-align: center;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 20px; /* 142.857% */
+}
+
+.upsale-2 .always-text {
+    color: #CA367C;
+    font-size: 46px;
+    font-style: italic;
+    font-weight: 900;
+    line-height: 52px;
+    margin-top: 23px;
+}
+
+.upsale-2 .always-description {
+    color: #1C1C28;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 24px; /* 150% */
+    padding-top: 5px;
+}
+
+.upsale-2 .upsale-product__left {
+    text-align: center;
+}
+
+.upsale-2 .upsale-product {
+    border-radius: 20px;
+    background: linear-gradient(180deg, #FFF 97.35%, #FFD9EB 100%);
+    box-shadow: 0px 4px 12px 0px #FBAAD0;
+}
+
+.upsale-2 .upsale-product__image::before {
+    display: none;
+}
+
+.upsale-2 .upsale-product__image {
+    position: relative;
+}
+
+.upsale-2 .upsale2-save {
+    background: url(../img/upsale/grey-save.svg) center center no-repeat;
+    width: 112px;
+    height: 109px;
+
+    color: #3DC051;
+    text-align: center;
+    font-size: 21.879px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 99%; /* 21.66px */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+
+    top: 15px;
+    right: 20px;
+
+}
+
+.upsale-2 .upsale-button__green {
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* UPSALE 3 */
+
+.upsale-ship__title {
+    color: #176DF0;
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px; /* 83.333% */
+    padding-top: 20px;
+    padding-bottom: 13px;
+}
+
+.upsale-shipping .upsale-main {
+    background: #E0F0FF;
+}
+
+.upsale-ship__order {
+    color: #2E2B28;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 9px;
+}
+
+.upsale-ship__questions {
+    color: #2E2B28;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 10px;
+}
+
+.upsale-ship__upgrade {
+    color: #1C1C28;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px; /* 150% */
+}
+
+.upsale-shipping .upsale-product {
+    border-radius: 20px;
+    background: linear-gradient(180deg, #FFF 97.35%, #E0F0FF 100%);
+    box-shadow: 0px 4px 12px 0px #BBD1E5;
+    margin-top: 12px;
+    display: block;
+}
+
+.shipping-product__title {
+    color: #2E2B28;
+    text-align: center;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.shipping-product__item1 {
+    border-radius: 6px;
+    background: #F1F1F1;
+    padding: 20px;
+    margin-right: 40px;
+
+    border: 3px solid #F1F1F1;
+}
+
+.shipping-product__item2 {
+    border-radius: 6px;
+    border: 3px solid #176DF0;
+    background: #FFF;
+    box-shadow: 4px 4px 10px 0px #D2D9E3;
+    padding: 20px;
+}
+
+.sp-item__title {
+    color: #2E2B28;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    padding-top: 8px;
+    line-height: normal;
+}
+
+.sp-item__time {
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 125% */
+    text-align: center;
+    padding-top: 7px;
+}
+
+.sp-item__list .sp-item__list-block:last-child {
+    margin-bottom: 0px;
+}
+
+.shipping-product__flex {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.sp-item__list-block {
+    display: flex;
+    align-items: center;
+    color: #1C1C28;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 17px;
+    margin-bottom: 8px;
+}
+
+.sp-item__list-block > span {
+    padding-left: 7px;
+}
+
+.sp-item__list {
+    margin-top: 20px;
+}
+
+.percent-ship {
+    color: #176DF0;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 21.6px;
+    text-align: center;
+    padding-top: 23px;
+}
+
+.shipping-price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12px;
+}
+
+.shipping-price__regular {
+    display: flex;
+    color: #999;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px; /* 140% */
+    
+}
+
+.shipping-price__regular-price {
+    position: relative;
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 28px;
+}
+
+.shipping-price__regular-price::before {
+    content: ' ';
+    background: #EC2121;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 13px;
+    left: 5px;
+    transform: rotate(-10deg);
+    border-radius: 5px;
+}
+
+.shipping-price__main {
+    color: #1C1C28;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+}
+
+.shipping-price__main > div:nth-child(1) {
+    margin-left: 15px;
+}
+
+.shipping-price__main-price {
+    color: #3DC051;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 10px;
+}
+
+.upsale-shipping .upsale-button__green {
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shipping-info__title {
+    color: #1C1C28;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; /* 133.333% */
+    text-align: center;
+}
+
+.shipping-info__subtitle {
+    color:  #1C1C28;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 133.333% */
+    padding-top: 10px;
+}
+
+.shipping-info__flex {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.shipping-info__item {
+    width: 23%;
+    text-align: center;
+}
+
+.shipping-info__section {
+    padding-top: 32px;
+}
+
+.shipping-info__item p {
+    color: #1C1C28;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 140% */
+    padding-top: 7px;
+}
+
+
+@media screen and (max-width: 1100px) {
+    .upsale-container {
+        max-width: 940px;
+    }
+
+    .upsele-subtitle {
+        font-size: 18px;
+    }
+
+    .upsale-2 .always-text {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .upsale-container {
+        max-width: 750px;
+    }
+
+    .upsale-button__white {
+        margin-right: 0px;
+        width: 49%;
+    }
+
+    .shipping-info__flex {
+        flex-wrap: wrap;
+    }
+
+    .shipping-info__item {
+        width: 49%;
+    }
+
+    .upsale-2 .upsale-button, .upsale-shipping .upsale-button {
+        justify-content: center;
+    }
+    
+    .upsale-button__green {
+        width: 49%;
+    }
+
+    .upsale-button {
+        justify-content: space-between;
+    }
+    
+    .upsale-header {
+        font-size: 22px;
+    }
+
+    .upsele-subtitle {
+        font-size: 15px;
+    }
+
+    .upsale-product {
+        padding: 15px;
+    }
+
+    .upsale-product__image img {
+        width: 300px;
+    }
+
+    .get-30days {
+        font-size: 13px;
+    }
+
+    .upsale-product__right {
+        width: 48%;
+    }
+
+    .up-price {
+        font-size: 58px;
+    }
 }
