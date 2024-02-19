@@ -351,6 +351,65 @@ select {
   margin-bottom: 5px;
 }
 
+.price-block {
+  background: url(../img/confirm/bg-con.svg) center center no-repeat;
+  background-size: cover;
+}
+
+.rebate-col {
+  display: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.savings {
+  color: #333;
+  font-family: 'Montserrat';
+  font-size: 59px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+}
+
+.savings .mark-1 {
+  font-weight: 500;
+}
+
+.savings .mark {
+  font-family: "Montserrat", sans-serif;
+  font-size: 52px;
+  font-weight: 900;
+  color: #fe2321;
+  background: none;
+}
+
+.header-left h2 {
+  color: #333;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.customer-support {
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.order-titl {
+  color: #333;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 0px;
+}
+
   
 @media screen and (max-width: 1199px) {
   .formBody button {

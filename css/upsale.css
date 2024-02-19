@@ -123,6 +123,8 @@ body {
     padding-bottom: 42px;
 }
 
+
+
 .expected-result {
     color: #1C1C28;
     font-size: 14px;
@@ -649,7 +651,7 @@ button {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    padding-bottom: 9px;
+    padding-bottom: 6px;
 }
 
 .upsale-ship__questions {
@@ -688,12 +690,12 @@ button {
     line-height: normal;
 }
 
+
 .shipping-product__item1 {
     border-radius: 6px;
     background: #F1F1F1;
-    padding: 20px;
-    margin-right: 40px;
-
+    padding: 16px;
+    margin-right: 23px;
     border: 3px solid #F1F1F1;
 }
 
@@ -702,7 +704,7 @@ button {
     border: 3px solid #176DF0;
     background: #FFF;
     box-shadow: 4px 4px 10px 0px #D2D9E3;
-    padding: 20px;
+    padding: 16px;
 }
 
 .sp-item__title {
@@ -711,7 +713,7 @@ button {
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
-    padding-top: 8px;
+    padding-top: 23px;
     line-height: normal;
 }
 
@@ -733,18 +735,18 @@ button {
     display: flex;
     align-items: stretch;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 12px;
 }
 
 .sp-item__list-block {
     display: flex;
     align-items: center;
     color: #1C1C28;
-    font-size: 24px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    padding-left: 17px;
+    padding-left: 21px;
     margin-bottom: 8px;
 }
 
@@ -753,24 +755,23 @@ button {
 }
 
 .sp-item__list {
-    margin-top: 20px;
+    margin-top: 16px;
 }
 
 .percent-ship {
     color: #176DF0;
     font-family: Roboto;
-    font-size: 24px;
+    font-size: 26px;
     font-style: italic;
     font-weight: 400;
-    line-height: 21.6px;
+    line-height: 34px;
     text-align: center;
-    padding-top: 23px;
+    padding-bottom: 28px;
+    padding-left: 24px;
+    display: block;
 }
 
 .shipping-price {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin-top: 12px;
 }
 
@@ -781,7 +782,9 @@ button {
     font-style: normal;
     font-weight: 700;
     line-height: 28px; /* 140% */
-    
+    flex-direction: column;
+    align-items: flex-end;
+    padding-bottom: 16px;
 }
 
 .shipping-price__regular-price {
@@ -789,6 +792,8 @@ button {
     display: inline-block;
     margin-left: 10px;
     font-size: 28px;
+    position: relative;
+    bottom: -3px;
 }
 
 .shipping-price__regular-price::before {
@@ -809,20 +814,21 @@ button {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    display: flex;
-    align-items: center;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
-.shipping-price__main > div:nth-child(1) {
-    margin-left: 15px;
+.shipping-price__main div:nth-child(1) {
+    padding-left: 10px;
 }
 
 .shipping-price__main-price {
     color: #3DC051;
-    font-size: 48px;
+    font-size: 64px;
     font-style: normal;
     font-weight: 700;
-    line-height: normal;
+    line-height: 73px;
     margin-left: 10px;
 }
 
@@ -831,7 +837,12 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
+
+.upsale-shipping .upsale-button__green, .upsale-2 .upsale-button__green {
+    font-size: 24px;
+ }
 
 .shipping-info__title {
     color: #1C1C28;
@@ -878,6 +889,15 @@ button {
     padding-top: 7px;
 }
 
+.shipping-product__item-price {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    align-self: flex-end;
+    justify-self: flex-end;
+    padding-bottom: 10px;
+}
+
 
 @media screen and (max-width: 1100px) {
     .upsale-container {
@@ -903,6 +923,20 @@ button {
         width: 49%;
     }
 
+    .sp-item__title {
+        padding-top: 10px;
+        font-size: 21px;
+    }
+
+    .shipping-product__flex {
+        flex-wrap: wrap;
+    }
+
+    .shipping-product__item-price {
+        width: 100%;
+    }
+    
+
     .shipping-info__flex {
         flex-wrap: wrap;
     }
@@ -919,6 +953,32 @@ button {
         width: 49%;
     }
 
+    .shipping-product__item-price {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .percent-ship {
+        padding-left: 0px;
+        padding-bottom: 0px;
+        padding-top: 15px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .shipping-price {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    
+    .shipping-price__regular {
+        margin-right: 20px;
+    }
+
+    .shipping-product__item-price {
+        justify-content: center;
+    }
     .upsale-button {
         justify-content: space-between;
     }
@@ -949,5 +1009,122 @@ button {
 
     .up-price {
         font-size: 58px;
+    }
+}
+
+@media screen and (max-height: 900px) {
+    .upsale-1 .upsale-product__image {
+        text-align: center;
+    }
+
+    .upsale-1 .upsale-product__image img {
+        width: 300px;
+    }
+
+    .upsale-1 .upsale-product {
+        padding: 17px;
+    }
+
+    .upsale-1 .expected-result {
+        padding-top: 10px;
+    }
+
+    .upsale-1 .upsale-product__price-box {
+        padding-top: 20px;
+    }
+
+    .sp-item__title {
+        padding-top: 10px;
+    }
+
+    .upsale-ship__title {
+        padding-top: 10px;
+        padding-bottom: 7px;
+    }
+
+    .upsale-shipping .upsale-product {
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
+}
+
+
+
+@media screen and (max-height: 800px) {
+    .upsale-1 .upsale-header {
+        font-size: 22px;
+        line-height: 24px;
+    }
+
+    .upsale-ship__questions {
+        padding-bottom: 0px;
+    }
+
+    .upsale-shipping .upsale-product {
+        padding: 15px;
+    }
+
+    .upsale-main, .upsale-title {
+        padding-top: 10px;
+    }
+
+    .upsele-subtitle {
+        font-size: 17px;
+        padding-top: 5px;
+    }
+
+    .upsale-product {
+        margin-top: 10px;
+    }
+
+   .upsale-product__price-box {
+        padding-top: 10px!important;
+   }
+
+   .upsale-button {
+        margin-top: 15px;
+   }
+
+   .sp-item__list-block {
+        font-size: 18px;
+        margin-bottom: 4px;
+   }
+
+   .sp-item__list {
+    margin-top: 7px;
+   }
+}
+
+@media screen and (max-height: 715px) {
+    .product-benefit__title {
+        padding-top: 5px;
+    }
+
+    .upsale-product__left {
+        padding-top: 0px;
+    }
+
+    .product-benefit__item {
+        font-size: 17px;
+    }
+
+    .product-benefit__item {
+        padding-bottom: 3px;
+    }
+
+    .upsale-1 .expected-result {
+        padding-top: 0px;
+    }
+
+    .upsale-2products__item {
+        padding: 7px;
+    }
+
+    .up-price {
+        font-size: 48px;
+    }
+
+    .upsale-product__price-box {
+        padding-top: 0px;
     }
 }
